@@ -36,8 +36,15 @@
 .btn{
     background-color: purple;
     border: none;
+    display: block;
     color: snow;
     text-transform: uppercase;
-    height: 300px;
-    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+        cursor: pointer;
+        margin-bottom: 10px;
+}
+.btn:hover{
+border: 2px solid snow;   
 }

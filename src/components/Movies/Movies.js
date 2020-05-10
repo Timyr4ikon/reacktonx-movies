@@ -98,6 +98,7 @@ export default class Movies extends Component {
           />
         </form>
         { locationSearchQuery && (this.state.loaded ? (
+          <>
           <div className={styles.list}>
             {this.state.films.map((el) => {
               return (
@@ -123,12 +124,13 @@ export default class Movies extends Component {
                 </Link>
               );
             })}
-            {this.state.films.length !== this.state.total ?
-          <button className={styles.btnx} onClick={this.handleClick}>Load more</button>
-              :
-              <span></span>
-          }
+          
           </div>
+            {this.state.films.length !== this.state.total ?
+              <button className={styles.btnx} onClick={this.handleClick}>Load more</button>
+                  :
+                  <span></span>
+              }</>
         ) : (
           <Loader />
         ))}

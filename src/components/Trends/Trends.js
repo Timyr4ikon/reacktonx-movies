@@ -37,8 +37,8 @@ export const Trends = ({ list,onClick }) => {
               );
             }
           })}
-          <button className={styles.btn} onClick={onClick}>Load more</button>
       </div>
+      <button className={styles.btn} onClick={onClick}>Load more</button>
     </>
   );
 };
